@@ -1,5 +1,3 @@
-/* Write your code below. Good luck! 🙂 */
-
 'use strict';
 
 const mark = {
