@@ -1,29 +1,20 @@
 'use strict';
 
-// let highScore = 99;
-// document.querySelector('.message').textContent = 'Correct Number!!';
-
-// document.querySelector('.highscore').textContent = highScore;
-
-// document.querySelector('.number').textContent = highScore;
-
-// document.querySelector('.score').textContent = highScore;
-
-// document.querySelector('.guess').value = highScore;
-
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 // document.querySelector('.number').textContent = secretNumber;
 
 // Reseting button
 document.querySelector('.again').addEventListener('click', function () {
-  document.querySelector('.message').textContent = 'Start guessing..';
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  console.log(secretNumber);
+  document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = score;
-  document.querySelector('.highscore').textContent = 0;
   document.querySelector('.number').textContent = '?';
+  document.querySelector('.highscore').textContent = 0;
   document.querySelector('.guess').value = '';
+  document.querySelector('body').style.backgroundColor = '#222';
 });
 
 // Game
