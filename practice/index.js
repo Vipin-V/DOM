@@ -1,36 +1,14 @@
-'use strict';
+"use strict";
 
-const mark = {
-  fullName: 'Mark Miller',
-  mass: 78,
-  height: 1.64,
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+let num = 0;
 
-const john = {
-  fullName: 'John Smith',
-  mass: 92,
-  height: 1.64,
-  calcBMI: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+console.log(num);
 
-mark.calcBMI();
-john.calcBMI();
-console.log(mark.bmi, john.bmi);
-
-if (john.bmi > mark.bmi) {
-  console.log(
-    `${john.fullName}'s BMI (${john.bmi} is higher than ${mark.bmi})`
-  );
-} else if (mark.bmi > john.bmi) {
-  console.log(
-    `${mark.fullName}'s BMI (${mark.bmi} is higher than ${john.bmi})`
-  );
+function add(a) {
+  num = a + 1;
+  return num;
 }
-console.log('helloworld');
+
+add(num);
+
+console.log(num);

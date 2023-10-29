@@ -6,4 +6,4 @@ This ia a collection of my small fun projects.
 - Roll Dice Game
 - Guess Number Game
 - Modal
-- Pig Game (under developement)
+- Pig Game
