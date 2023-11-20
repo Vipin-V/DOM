@@ -33,7 +33,7 @@ beg=0;
 end=n-1;
 printf("enter item");
 scanf("  %d  ",&item);
-while(beg<end && Ga[mid]!=item)
+while(beg<end && a[mid]!=item)
 {
 if(item<a[mid])
 {
