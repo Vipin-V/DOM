@@ -1,14 +1,5 @@
 "use strict";
+const arr = [2, 3, 4, 5, 6];
 
-let num = 0;
-
-console.log(num);
-
-function add(a) {
-  num = a + 1;
-  return num;
-}
-
-add(num);
-
-console.log(num);
+const [x, , y, z, a] = arr;
+console.log(x, a, y);
